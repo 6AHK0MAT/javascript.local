@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript для начинающих</title>
+</head>
+<body>
+<img src="images/fotogr1.jpg" alt="Фотография 1" id="image" onclick="changeImage()">
+<script>
+    function changeImage() {
+        var image = document.getElementById('image');
+
+        if (image.src.match("fotogr1")) {
+            image.src = "images/fotogr2.jpg";
+        } else {
+            image.src = "images/fotogr1.jpg";
+        }
+
+    }
+</script>
+</body>
+</html>
